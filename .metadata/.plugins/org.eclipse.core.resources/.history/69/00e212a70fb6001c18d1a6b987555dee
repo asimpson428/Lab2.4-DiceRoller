@@ -1,0 +1,25 @@
+
+import java.util.Random;
+
+public class DiceRoller {
+	
+
+
+	public static void main(String[] args) {
+		
+	// simulate role of d6 and print the result
+		
+	Random r = new Random() ;
+	
+	int result = 0;
+			
+	for	(int i = 0; i < 50; i++) {	
+	r.nextInt(6);  // gives us a result between 0 and 5
+	result = result + 1;
+	
+	System.out.println("You rolled a "+result);
+	}
+
+	}
+
+}
